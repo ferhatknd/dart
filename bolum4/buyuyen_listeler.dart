@@ -1,5 +1,3 @@
-import 'dart:math';
-
 void main(List<String> args) {
   List<int?> sayilar = [];
   sayilar.add(1);
