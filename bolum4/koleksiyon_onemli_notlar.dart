@@ -23,8 +23,6 @@ void main(List<String> args) {
   var set3 = {"ayse"};
   var set4 = {"hasan"};
   var set5 = {"huseyin"};
-
   var sonSet = {...set1, ...set2, ...set3, ...set4, ...set5};
-
   print(sonSet);
 }
