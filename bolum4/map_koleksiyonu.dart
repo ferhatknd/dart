@@ -1,4 +1,4 @@
-//listede index vardı. set de ise tekrar etmeyen değer içeriyor.
+// listede index vardı. set de ise tekrar etmeyen değer içeriyor.
 // map ise değerler keyvalue ilişkisi altında tutulur. kitabın index i gibi.
 void main(List<String> args) {
   Map<String, int> alanKodlari = {

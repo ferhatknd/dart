@@ -1,4 +1,7 @@
+import 'dart:io';
+
 void main(List<String> args) {
+/*
   //1- Dört il tutan liste ve ekrana yazdır.
   List<String> sehirler = [
     'istanbul',
@@ -17,7 +20,7 @@ void main(List<String> args) {
   sehirler2.add('ankara');
   print(sehirler);
 
-  // 2- keyi string ve değeleri dinamik map, bilgisayarın çekirdek, ram, ssd var yok tutup, ekrana yazdıran fonksiyon.
+  // 2- keyi string ve değeleri dinamik map, bilgisayarın çekirdek, ram, ssd var/yok tutup, ekrana yazdıran fonksiyon.
   var bilgOzellikleri = <String, dynamic>{
     'çekirdek': 16,
     'ram': 64,
@@ -49,10 +52,62 @@ void main(List<String> args) {
   */
 
   for (int i = 0; i < iller.length; i++) {
-    var iSehir = iller[i]; // iSehir ile Sehir map içindeki keyValue / index karşılığını çağırmak için
-    print("${i + 1}. şehir :${iSehir['il']}, ilce :${iSehir['ilce_sayisi']}, plaka :${iSehir['plaka']}, nufus :${iSehir['nufus']}");
+    // var iSehir = iller[i]; // iSehir ile Sehir map içindeki keyValue / index karşılığını çağırmak için
+    // print("${i + 1}. şehir :${iSehir['il']}, ilce :${iSehir['ilce_sayisi']}, plaka :${iSehir['plaka']}, nufus :${iSehir['nufus']}");
+    // alternatif listeleme. her ili 4 satırda anlatır. key ve value değişkenle çağrılır.
+    print("${i + 1}. il bilgileri:");
+    for (var oankiEntry in iller[i].entries) {
+      print(
+          "${oankiEntry.key} : ${oankiEntry.value}"); // bu 4 defa döner çünkü 4 özellik var.
+      if (oankiEntry.key == 'nufus') {
+        print("milyon"); // mucitlik.
+      }
+    }
   }
 
   // print(iller[0]['il']); illerdeki '0'. index satırını komple getirir.
   // print(iller[0]['il']); 'il' map içindeki keyValue değeri olduğundan karşısındaki il ismini getirir.
+
+  // 4- 5 elemanlı iki liste. elemanları 0-50 arasında random sayılar.
+  // Bu iki liste tek yeni bir listede birleştirilecek.
+  // Yeni listenin elemanlarının kareleri bir 'set'te tutulacak.
+
+  List<int> rasSay1 = List.filled(5, 0);
+  var rasSay2 = <int>[];
+  for (int i = 0; i < 5; i++) {
+    rasSay1[i] = Random().nextInt(51); //kısa metot
+    int randomNumber2 = Random().nextInt(51); //google ile bulunan metot :)
+    rasSay2.add(randomNumber2);
+  }
+  print(rasSay1);
+  print(rasSay2);
+
+  var rasSayHepsi = [...rasSay1, ...rasSay2];
+  print(rasSayHepsi);
+
+  Set<int> rasSaySq = Set(); //set in list ten farkı tekrar eden elemen olmaz.
+  for (int s1 in rasSayHepsi) {
+    rasSaySq.add(s1 * s1);
+  }
+  print(rasSaySq);
+  */
+
+  // 5- pozitif sayı girişi ile liste üretilecek.
+  // giriş sonrası ortalama ekrana yazılacak.
+  // -1 ile program sonlanacak.
+
+  var sayilar = <int>[];
+  while (true) {
+    stdout.write("Pozitif tam sayı girin (çıkış için -1):");
+    int input = int.parse(stdin.readLineSync()!);
+    if (input == -1) {
+      break;
+    }
+    sayilar.add(input);
+    print(sayilar); // bilgi amaçlı
+
+    double ort = (sayilar.reduce((value, element) => value + element)) /
+        (sayilar.length);
+    print("${sayilar} Ortalama: $ort");
+  }
 }
