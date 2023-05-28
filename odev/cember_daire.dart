@@ -1,4 +1,4 @@
-// nesnesel_odev.dart dosyasından CemberDaire() veri girildiğinde aşağısı çalışır.
+// nesnesel_odev.dart dosyasından CemberDaire() class'ı çağrıldığında aşağısı çalışır.
 class CemberDaire {
   int _yariCap = 1; // null gelmesin diye.
   double _pi = 3.14; // sabit zaten.
