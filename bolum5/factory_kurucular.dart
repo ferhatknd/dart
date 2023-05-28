@@ -18,6 +18,7 @@ class Ogrenci {
     print("sadece isimli kurucu");
   }
 
+// return değer göndermek için factory ile kurucular yazılabilir.
   factory Ogrenci.factoryKurucusu(int id, String isim) {
     if (id < 0) {
       return Ogrenci(5, isim);

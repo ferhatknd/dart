@@ -2,7 +2,7 @@ import 'dart:math';
 
 class VeritabaniIslemleri {
   String _kullaniciAdi = "fer";
-  String _sifre = "1233";
+  String _sifre = "123";
 
   bool baglan() {
     if (_internetVarMi()) {
@@ -13,12 +13,8 @@ class VeritabaniIslemleri {
     } else
       return false;
   }
-  VeritabaniIslemleri(){
-    
-  }
-  VeritabaniIslemleri.loginWithNameandPass(String kullaniciAdi, String sifre){
-
-  }
+  VeritabaniIslemleri(){}
+  VeritabaniIslemleri.loginWithNameandPass(String kullaniciAdi, String sifre){}
 
   bool _internetVarMi() {
     if (Random().nextBool()) {
