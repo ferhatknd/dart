@@ -14,7 +14,7 @@ void main(List<String> args) {
   bmw.bilgileriSoyle();
   bmw.yasHesapla();
 
-  var citroen = Araba.markasizKurucuMetot(false, 2015);
+  // var citroen = Araba.markasizKurucuMetot(false, 2015);
   Araba suzuki = Araba.modeliOlmayanMetot(true, "Suzuki");
 
   suzuki.bilgileriSoyle();

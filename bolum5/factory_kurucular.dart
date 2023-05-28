@@ -4,6 +4,8 @@ void main(List<String> args) {
   Ogrenci ayse = Ogrenci.factoryKurucusu(-9, "Ayşe");
   print(ayse.id);
   print(ayse.isim);
+  print(asaf);
+  print(alya);
 }
 
 class Ogrenci {

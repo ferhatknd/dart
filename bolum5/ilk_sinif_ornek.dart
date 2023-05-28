@@ -1,8 +1,4 @@
 void main(List<String> args) {
-  int sayi = 5;
-  String isim = "fer";
-  List<int> liste = [];
-  //kendi veri türü için sınıflar üretildi -> class
 
   Ogrenci fer = Ogrenci(); // burdaki fer ifadesi nesnedir. instance
   fer.ogrNo = 256; // burdaki ogrno ise instance variable.
@@ -12,8 +8,8 @@ void main(List<String> args) {
   hat.ogrAd = "Hattat Oglu";
   hat.ogrNo = 255;
   hat.aftifMi = true;
-  Ogrenci ayse = Ogrenci(); // Ogrenci ayse  =... yerine 
-  var kemal = Ogrenci(); // şeklinde de nesne tanımlanabilir. 
+  // Ogrenci ayse = Ogrenci(); // Ogrenci ayse  =... yerine 
+  // var kemal = Ogrenci(); // şeklinde de nesne tanımlanabilir. 
 }
 
 

@@ -18,7 +18,7 @@ void main(List<String> args) {
 
 // Map oluşturma "çok önemli" json okumak vs için.
   Map<String, dynamic> mapOlustur1 = Map();
-  Map<String, dynamic> mapOlustur2 = {};
+  // Map<String, dynamic> mapOlustur2 = {};
   mapOlustur1["yaş"] = 44; // map e yaş değeri 44 girdi.
   print(mapOlustur1["yaş"]); // 44 ü yaş keyValue su ile getirdi.
 
