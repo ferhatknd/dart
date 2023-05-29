@@ -1,0 +1,29 @@
+# Dart Build Çıktıları
+/build/
+/packages/
+
+# IDE veya metin düzenleyiciye özgü dosyalar
+.idea/
+.vscode/
+
+# Dart Test Çıktıları
+/test/.test_coverage/
+/test/.dart_tool/
+
+# Derleme veya geçici dosyalar
+.dart_tool/
+.pub/
+.pub-cache/
+
+# Analiz dosyaları
+.dart_tool/
+/.analysis_options
+/.analysis_options.yaml
+
+# Kullanıcıya özel yapılandırma dosyaları
+*.iml
+*.sln
+*.user
+*.lock
+
+# Depolama alanından hariç tutulacak dosya veya dizinleri buraya ekleyebilirsiniz.
