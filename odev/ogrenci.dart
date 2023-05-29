@@ -1,3 +1,4 @@
+// 2. soru çözümü adımları.
 // 1. Adım olarak başka bir dosyada class olarak Ogrenci oluşturuldu. 
 // Hangi verileri alacağı tanımlandı. 6. satıra kadar.
 class Ogrenci2{

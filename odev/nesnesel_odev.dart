@@ -5,13 +5,15 @@
 // ve bu öğrenciler saklanacak ve ekrana yazdırılacak.
 
 import 'dart:math';
-import 'cember_daire.dart';
-import 'ogrenci.dart';
+// import 'cember_daire.dart'; //1. soru için import ediliyor.
+import 'ogrenci.dart'; //2. soru için import ediliyor.
 
 void main(List<String> args) {
-  CemberDaire c1 = CemberDaire(4);
+  // 1. sorunun çözümü
+  //CemberDaire c1 = CemberDaire(4);
   //print("Alan: ${c1.alanHesapla()}");
   //print("Çevre: ${c1.cevreHesapla()}");
+  //1. sorunun çözümü bitti.
 
   // Ogrenci2 ogr1 = Ogrenci2(id: 5, not: 10); // bir tane öğrenci eklemek için
   // 2. Adım okuldaki tüm ogrencilerin tutulduğu liste üretildi. içi boş
