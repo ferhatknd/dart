@@ -13,7 +13,7 @@ void main(List<String> args) {
   var list1 = List<Student>.filled(5, Student(0, "", 0));
   // 5 -> beş elemanlı demek, ikinci kısım neyle doldurulacak ise o, hepsini int ise 0 ile doldurabiliriz.
   // yada örnekteki gibi bir class çağırabiliriz ve içine yazılacak olan Student ile tanımlı olan 3 parametre.
-  // print("list1 (just filled 0) $list1"); // herkes 0 lanmış :)
+  print("list1 (just filled 0) $list1"); // herkes 0 lanmış :)
 
   var listFrom = List<Person>.from(allStudents);
   // listeler iterable olduğu için bir liste veya set gönderebiliriz.

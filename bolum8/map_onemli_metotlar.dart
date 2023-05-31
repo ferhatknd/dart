@@ -1,8 +1,8 @@
 void main(List<String> args) {
   // Map lerin soyut sınıfları da vardır.
   Map<String, dynamic> map = Map();
-  Map<String, dynamic> map2 = {};
-  var map3 = <String, dynamic>{};
+  // Map<String, dynamic> map2 = {};
+  // var map3 = <String, dynamic>{};
   // 3 şekilde oluşturulabilir.
 
   map['id'] = 5;
