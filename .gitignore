@@ -11,12 +11,12 @@
 /test/.dart_tool/
 
 # Derleme veya geçici dosyalar
-.dart_tool/
+.temp/
 .pub/
 .pub-cache/
 
 # Analiz dosyaları
-.dart_tool/
+.temp/
 /.analysis_options
 /.analysis_options.yaml
 
