@@ -3,12 +3,15 @@ void main(List<String> args) {
   try {
     int sayi = 100 ~/ int.parse("fer"); // bu bölen 0 ise başka hata olur.
     print(sayi);
-  } on IntegerDivisionByZeroException {
+  } on IntegerDivisionByZeroException { // özellikle bu hata varsa...
     print("Bölen sıfır olamaz");
-  } on FormatException catch (e) {
-    print("Hata: ${e.message} \ ${e.source}");
-  } finally {
+  } on FormatException catch (e) { // özellikle bu hata varsa mesajı ve kaynağı yazsın...
+    print(e.message);
+    print(e.source);
+  }catch (e){ // sadece hatayı yazsın. (e) error
+    print("Hata: ${e}");
+  }finally { // hata çıkmazsa
     print("işlem bitti");
   }
-  print("Program bitti");
+  print("Program devam..."); 
 }
