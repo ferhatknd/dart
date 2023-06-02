@@ -1,13 +1,21 @@
-main() {
-  // Strings can be appended using +
-  print("dart" + "lang");
+void main() {
+  performTaskWithDelay<String>(Duration(seconds: 2), () {
+    return "Merhaba, 2 saniye sonra döneceğim!";
+  }).then((result) {
+    print(result);
+  }).catchError((error) {
+    print("Hata: $error");
+  });
+  
+  print("Program devam ediyor");
+}
 
-  // Integers and Floats
-  print("1+1=${1+1}");
-  print("7.0/3.0 =${7.0/3.0}");
-
-  // Booleans
-  print(true && false);
-  print(false || true);
-  print(!true); // true tersini veriyor.
+Future<T> performTaskWithDelay<T>(Duration delay, T Function() task) {
+  return Future.delayed(delay, () {
+    try {
+      return task();
+    } catch (e) {
+      throw Exception("Görev çalıştırılırken bir hata oluştu: $e");
+    }
+  });
 }
